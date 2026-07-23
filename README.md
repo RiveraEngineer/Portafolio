@@ -13,3 +13,5 @@ Expected public URL:
 `https://riveraengineer.github.io/Portafolio/`
 
 The site identifies unfinished manuscripts as works in preparation and omits project-specific client information.
+
+- `project-enkf.html`: EnKF–HEC-HMS research case with precipitation, temperature and ETo diagnostics.

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EnKF–HEC-HMS Research | Sergio Rivera</title>
+<meta name="description" content="Research case on stochastic calibration of a semi-distributed HEC-HMS model using the Ensemble Kalman Filter.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#07110f">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">SR</span><span>Sergio Rivera<small>Water Resources Engineer</small></span></a>
+  <nav><a href="index.html#work">Projects</a><a href="index.html#research">Research</a><a class="nav-cta" href="index.html#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="case-hero">
+  <a class="back" href="index.html#research">← Back to portfolio</a>
+  <p class="eyebrow">Research in active development · HEC-HMS · EnKF · Python</p>
+  <h1>Stochastic parameter estimation in a semi-distributed hydrological model.</h1>
+  <p class="lead">Development of a traceable hydroclimatic modelling configuration and an external Ensemble Kalman Filter workflow for continuous parameter updating in a partially instrumented Andean basin.</p>
+  <div class="case-summary">
+    <div><strong>Scope</strong><br>Precipitation, temperature, reference evapotranspiration, discharge and HEC-HMS modelling.</div>
+    <div><strong>Methods</strong><br>Random Forest reconstruction, spatial aggregation, thermo-orographic transfer and stochastic calibration.</div>
+    <div><strong>Status</strong><br>Journal manuscript in active development. Results and figures remain preliminary.</div>
+  </div>
+</section>
+
+<section class="section split">
+  <div>
+    <p class="eyebrow">Research problem</p>
+    <h2>Continuous modelling under limited observations.</h2>
+  </div>
+  <div class="about-copy">
+    <p>The study addresses two coupled challenges: constructing hydrometeorological inputs with explicit traceability and evaluating whether an external EnKF calibrator can add information beyond event-based deterministic calibration.</p>
+    <p>The portfolio presents only selected diagnostics. It does not describe the constructed products as official climatology or direct observations at every spatial unit.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div><p class="eyebrow">Selected diagnostics</p><h2>Spatial patterns used to construct and assess model inputs.</h2></div>
+    <p>The figures summarize precipitation, maximum and minimum temperature, and estimated atmospheric demand for the model domain.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="assets/images/enkf-precipitation-monthly.jpg" alt="Monthly spatial distribution of constructed precipitation"><figcaption>Multiyear monthly spatial distribution of constructed precipitation used as a diagnostic of the HEC-HMS forcing.</figcaption></figure>
+    <figure><img src="assets/images/enkf-precipitation-annual.jpg" alt="Mean annual precipitation distribution"><figcaption>Constructed mean annual precipitation field and subbasin-scale spatial contrast.</figcaption></figure>
+    <figure><img src="assets/images/enkf-tmax-monthly.jpg" alt="Monthly maximum temperature distribution"><figcaption>Monthly maximum-temperature patterns estimated through a DEM-assisted thermo-orographic model.</figcaption></figure>
+    <figure><img src="assets/images/enkf-tmin-monthly.jpg" alt="Monthly minimum temperature distribution"><figcaption>Monthly minimum-temperature patterns used to support continuous simulation and reference-evapotranspiration estimation.</figcaption></figure>
+    <figure><img src="assets/images/enkf-eto-spatial.jpg" alt="Spatial distribution of reference evapotranspiration"><figcaption>Estimated mean annual reference evapotranspiration by subbasin, interpreted as atmospheric demand rather than actual evapotranspiration.</figcaption></figure>
+    <figure><img src="assets/images/hms-basin.jpg" alt="HEC-HMS semi-distributed basin configuration"><figcaption>Semi-distributed HEC-HMS configuration connecting five subbasins, routing reaches, junctions and the adopted closure point.</figcaption></figure>
+  </div>
+</section>
+
+<section class="section split">
+  <div><p class="eyebrow">Technical contribution</p><h2>From raw records to a reproducible calibration workflow.</h2></div>
+  <div class="about-copy">
+    <ul>
+      <li>Quality control and differentiated reconstruction of hydroclimatic series.</li>
+      <li>Regional two-stage Random Forest modelling for precipitation occurrence and conditional magnitude.</li>
+      <li>Spatial aggregation to subbasins and construction of temperature and reference-evapotranspiration inputs.</li>
+      <li>Semi-distributed HEC-HMS implementation and automated external model execution.</li>
+      <li>Sequential parameter updating, uncertainty analysis and comparison with event-based calibration.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer><span>© 2026 Sergio Rivera</span><span>Research manuscript in active development; figures are preliminary.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
