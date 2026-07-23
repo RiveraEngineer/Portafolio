@@ -1,0 +1,1 @@
+const header=document.querySelector('.site-header');document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));window.addEventListener('scroll',()=>header.style.boxShadow=window.scrollY>20?'0 12px 35px rgba(0,0,0,.22)':'none');
